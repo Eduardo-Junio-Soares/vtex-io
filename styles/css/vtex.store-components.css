@@ -1,0 +1,11 @@
+.searchBarContainer {
+    width: 612px;
+    margin: 0 90px;
+}
+.autoCompleteOuterContainer--header-search :global(.vtex-styleguide-9-x-input) {
+    max-width: 100%;
+}
+.autoCompleteOuterContainer--header-search :global(.vtex-input-prefix__group) {
+    border: 1px solid #000;
+    border-radius: 0;
+}

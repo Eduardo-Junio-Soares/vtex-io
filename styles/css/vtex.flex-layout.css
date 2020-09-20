@@ -1,0 +1,7 @@
+.flexRow--header-desktop {
+    border-bottom: 1px solid #c9c9c9;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
