@@ -7,9 +7,13 @@
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#header-desktop"
+      "flex-layout.row#header-desktop",
+      "flex-layout.row#menu-header"
     ]
   },
+
+  // Header Desktop ------------------------------------------------------------------------------------------------------------------------
+
   "flex-layout.row#header-desktop": {
     "props": {
       "horizontalAlign": "center",
@@ -27,22 +31,6 @@
       "minicart.v2"
     ]
   },
-  
-  "search-bar#header-search": {
-    "props":{
-      "blockClass": "header-search"
-    }
-  },
-  "login#header-login": {
-    "props": {
-      "blockClass": "header-login"
-    }
-  },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle",
@@ -58,6 +46,123 @@
       "width": "239"
     }
   },
+  "search-bar#header-search": {
+    "props":{
+      "blockClass": "header-search"
+    }
+  },
+  "login#header-login": {
+    "props": {
+      "blockClass": "header-login"
+    }
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  // Menu Header desktop -----------------------------------------------------------------------------------------------------------------------
+  "flex-layout.row#menu-header": {
+    "props":{
+      "blockClass": "menu-header"
+    },
+    "children":[
+      "menu-item#femei",
+      "menu-item#barbati",
+      "menu-item#copii",
+      "menu-item#meli-melo-deco",
+      "menu-item#back-the-school",
+      "menu-item#promomania"
+    ]
+  },
+  "menu-item#femei": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "header-item-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "femei",
+        "text": "femei"
+      }
+    }
+  },
+  "menu-item#barbati": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "header-item-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "barbati",
+        "text": "barbati"
+      }
+    }
+  },
+  "menu-item#copii": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "header-item-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "copii",
+        "text": "copii"
+      }
+    }
+  },
+  "menu-item#meli-melo-deco": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "header-item-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "meli-melo-deco",
+        "text": "meli melo deco"
+      }
+    }
+  },
+  "menu-item#back-the-school": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "header-item-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "back-the-school",
+        "text": "back to school"
+      }
+    }
+  },
+  "menu-item#promomania": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "header-item-menu",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "promomania",
+        "text": "promomania %"
+      }
+    }
+  },
+
+  // Header Mobile -----------------------------------------------------------------------------------------------------------------------------
+
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },

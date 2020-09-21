@@ -1,0 +1,17 @@
+.styledLinkContent--header-item-menu {
+    font-family: 'open sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.styledLinkContent--header-item-menu:hover {
+    text-decoration: underline;
+}
+.styledLinkContainer--header-item-menu {
+    padding: 15px 0;
+    text-align: center;
+}
+.menuItem--header-item-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

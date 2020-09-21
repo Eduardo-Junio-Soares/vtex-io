@@ -1,6 +1,6 @@
 .searchBarContainer {
     width: 612px;
-    margin: 0 90px;
+    margin: 0 150px;
 }
 .autoCompleteOuterContainer--header-search :global(.vtex-styleguide-9-x-input) {
     max-width: 100%;

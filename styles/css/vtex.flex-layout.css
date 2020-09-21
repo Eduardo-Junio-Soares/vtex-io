@@ -5,3 +5,11 @@
     align-items: center;
     justify-content: center;
 }
+.flexRow--menu-header {
+    border-bottom: 1px solid #c9c9c9;
+}
+.flexRowContent--menu-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
