@@ -9,3 +9,10 @@
     border: 1px solid #000;
     border-radius: 0;
 }
+.infoCardTextContainer--banner-menu-femei {
+    display: none;
+}
+.infoCardImageContainer--banner-menu-femei {
+    width: 100%;
+    max-width: 220px;
+}

@@ -88,7 +88,8 @@
         "tagTitle": "femei",
         "text": "femei"
       }
-    }
+    },
+    "blocks":["submenu#category-femei"] 
   },
   "menu-item#barbati": {
     "props": {
@@ -150,7 +151,7 @@
     "props": {
       "type": "custom",
       "highlight": false,
-      "blockClass": "header-item-menu",
+      "blockClass": "header-item-menu-promania",
       "itemProps": {
         "type": "internal",
         "href": "#",
@@ -160,6 +161,308 @@
       }
     }
   },
+  // Sub Item FEMEI ----------------------------------------------------------------------------------------------------------------------------------
+  "submenu#category-femei": {
+    "props":{ 
+        "width": "auto"
+    },
+    "children":[
+      "menu#category-alege-category",
+      "menu#category-alege-stilul",
+      "menu#category-alege-branduri",
+      "menu#category-promotii",
+      "info-card#category-femei"
+    ]
+  },
+  "menu#category-alege-category": {
+    "props": {
+			"orientation": "vertical"
+		},
+    "children":[
+      "menu-item#category-category-header",
+      "menu-item#category-femei-bijuterii",
+      "menu-item#category-femei-genti-si-portofele",
+      "menu-item#category-femei-haine",
+      "menu-item#category-femei-accesorii-par"
+    ]
+  },
+  "menu-item#category-category-header": {
+		"props": {
+			"id": "menu-header",
+			"type": "custom",
+			"iconId": null,
+      "highlight": false,
+      "blockClass": "sub-menu-header",
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": true,
+				"tagTitle": "ALEGE CATEGORIA",
+				"text": "ALEGE CATEGORIA"
+			}
+		}
+  },
+  "menu-item#category-femei-bijuterii": {
+    "props":{
+      "id": "menu-bijuterii",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps":{
+        "type": "internal",
+        "href":"/",
+        "noFollow":true,
+        "tagTitle": "Bijuterii",
+        "text": "Bijuterii"
+      }
+    }
+  },
+  "menu-item#category-femei-genti-si-portofele": {
+    "props":{
+      "id": "menu-genti",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps":{
+        "type": "internal",
+        "href":"/",
+        "noFollow":true,
+        "tagTitle": "Genti si Portofele",
+        "text": "Genti si Portofele"
+      }
+    }
+  },
+  "menu-item#category-femei-haine": {
+    "props":{
+      "id": "menu-haine",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps":{
+        "type": "internal",
+        "href":"/",
+        "noFollow":true,
+        "tagTitle": "Haine, Incaltaminte, Accesorii Fashion",
+        "text": "Haine, Incaltaminte, Accesorii Fashion"
+      }
+    }
+  },
+  "menu-item#category-femei-accesorii-par": {
+    "props":{
+      "id": "menu-accesorii-par",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps":{
+        "type": "internal",
+        "href":"/",
+        "noFollow":true,
+        "tagTitle": "Accesorii par",
+        "text": "Accesorii par"
+      }
+    }
+  },
+  "menu#category-alege-stilul": {
+    "props": {
+			"orientation": "vertical"
+		},
+    "children":[
+      "menu-item#category-stilul-header",
+      "menu-item#category-elegant",
+      "menu-item#category-office",
+      "menu-item#category-vezi-toate"
+    ]
+  },
+  "menu-item#category-stilul-header": {
+    "props":{
+      "id": "stilul",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "sub-menu-header",
+      "itemProps":{
+        "type": "internal",
+        "href":"/",
+        "noFollow":true,
+        "tagTitle": "ALEGE STILUL",
+        "text": "ALEGE STILUL"
+      }
+    }
+  },
+  "menu-item#category-elegant": {
+    "props":{
+      "id": "elegant",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps":{
+        "type": "internal",
+        "href":"/",
+        "noFollow":true,
+        "tagTitle": "Elegant",
+        "text": "Elegant"
+      }
+    }
+  },
+  "menu-item#category-office": {
+    "props":{
+      "id": "office",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps":{
+        "type": "internal",
+        "href":"/",
+        "noFollow":true,
+        "tagTitle": "Office",
+        "text": "Office"
+      }
+    }
+  },
+  "menu-item#category-vezi-toate": {
+    "props":{
+      "id": "vezi-toate",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps":{
+        "type": "internal",
+        "href":"/",
+        "noFollow":true,
+        "tagTitle": "Vezi toate",
+        "text": "Vezi toate"
+      }
+    }
+  },
+  "menu#category-alege-branduri": {
+    "props":{
+      "orientation":"vertical"
+    },
+    "children":[
+      "menu-item#category-branduli-header",
+      "menu-item#category-meli-melo",
+      "menu-item#category-online-exec",
+      "menu-item#category-vezi-toate"    
+    ]
+  },
+  "menu-item#category-branduli-header": {
+    "props":{
+      "id": "alege-branduli",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "sub-menu-header",
+      "itemProps":{
+        "type": "internal",
+        "href":"/",
+        "noFollow":true,
+        "tagTitle": "ALEGE BRANDURI",
+        "text": "ALEGE BRANDURI"
+      }
+    }
+  },
+  "menu-item#category-meli-melo": {
+    "props":{
+      "id": "meli-melo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "sub-menu-header",
+      "itemProps":{
+        "type": "internal",
+        "href":"/",
+        "noFollow":true,
+        "tagTitle": "Meli Melo",
+        "text": "Meli Melo"
+      }
+    }
+  },
+  "menu-item#category-online-exec": {
+    "props":{
+      "id": "online-exec",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "sub-menu-header",
+      "itemProps":{
+        "type": "internal",
+        "href":"/",
+        "noFollow":true,
+        "tagTitle": "Meli Melo Exclusiv Online",
+        "text": "Meli Melo Exclusiv Online"
+      }
+    }
+  },
+  "menu#category-promotii": {
+    "props":{
+      "orientation":"vertical"
+    },
+    "children":[
+      "menu-item#category-promotii-header",
+      "menu-item#category-esarfe",
+      "menu-item#category-din-matase"
+    ]
+  },
+  "menu-item#category-promotii-header": {
+    "props":{
+      "id": "promotii",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "sub-menu-header",
+      "itemProps":{
+        "type": "internal",
+        "href":"/",
+        "noFollow":true,
+        "tagTitle": "PROMOTII",
+        "text": "PROMOTII"
+      }
+    }
+  },
+  "menu-item#category-esarfe": {
+    "props":{
+      "id": "esarf",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "sub-menu-header",
+      "itemProps":{
+        "type": "internal",
+        "href":"/",
+        "noFollow":true,
+        "tagTitle": "Esarfe",
+        "text": "Esarfe 17.99 de la 49.99"
+      }
+    }
+  },
+  "menu-item#category-din-matase": {
+    "props":{
+      "id": "din-matase",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "sub-menu-header",
+      "itemProps":{
+        "type": "internal",
+        "href":"/",
+        "noFollow":true,
+        "tagTitle": "Esarfe din matase 59.99 de la 149.99",
+        "text": "Esarfe din matase 59.99 de la 149.99"
+      }
+    }
+  },
+  "info-card#category-femei": {
+		"props": {
+      "height": 230,
+			"id": "info-card-category-femei",
+			"isFullModeStyle": false,
+			"imageActionUrl": "#",
+			"imageUrl": "https://melimeloparis.vtexassets.com/assets/vtex.file-manager-graphql/images/337x325%20categorie%20femei%20clothes%201.3___77f23a98c42650f9322853b479cb910c.png",
+			"blockClass": "banner-menu-femei"
+		}
+	},
+
+
 
   // Header Mobile -----------------------------------------------------------------------------------------------------------------------------
 
