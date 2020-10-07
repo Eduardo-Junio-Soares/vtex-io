@@ -1,7 +1,8 @@
+.styledLinkContent--header-item-menu-promania,
 .styledLinkContent--header-item-menu {
     font-family: 'open sans', sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 15px;
 }
 .styledLinkContent--header-item-menu-promania:hover,
@@ -14,9 +15,6 @@
     justify-content: center;
 }
 .styledLinkContent--header-item-menu-promania {
-    font-family: 'open sans', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
     color: #b2cf3b;
 }
 
@@ -42,4 +40,24 @@
 }
 .menuItem .styledLinkContent {
     font-size: 13px;
+}
+.styledLinkContent--sub-menu-header {
+    font-weight: bold;
+    font-size: 15px !important;
+    white-space: nowrap;
+    transition: all 0.3s;
+}
+.styledLink--sub-menu-item {
+    font-weight: 500;
+    color: #727272;
+}
+.styledLinkContent--sub-menu-item {
+    padding: 4px;
+}
+.styledLink--sub-menu-item:hover {
+    color: red;
+}
+.menuContainerNav {
+    padding: 0 25px;
+    border-right: 1px solid #e7ecef;
 }

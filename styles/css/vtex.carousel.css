@@ -1,0 +1,12 @@
+.slide--top-bar-header .containerImg {
+    background-color: #343434;
+    height: 35px;
+}
+.imgRegular--top-bar-header {
+    height: 100%;
+}
+
+.img--top-bar-header {
+    width: auto;
+    height: initial;
+}

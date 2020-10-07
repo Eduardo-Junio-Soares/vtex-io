@@ -1,6 +1,6 @@
 .searchBarContainer {
     width: 612px;
-    margin: 0 150px;
+    margin: 0 100px;
 }
 .autoCompleteOuterContainer--header-search :global(.vtex-styleguide-9-x-input) {
     max-width: 100%;
@@ -9,10 +9,16 @@
     border: 1px solid #000;
     border-radius: 0;
 }
-.infoCardTextContainer--banner-menu-femei {
+.infoCardTextContainer--banner-menu {
     display: none;
 }
-.infoCardImageContainer--banner-menu-femei {
+.infoCardImageContainer--banner-menu {
     width: 100%;
     max-width: 220px;
+}
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: unset;
 }

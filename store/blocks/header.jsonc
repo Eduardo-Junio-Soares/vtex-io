@@ -7,13 +7,39 @@
   },
   "header-layout.desktop": {
     "children": [
+      "flex-layout.row#top-bar",
       "flex-layout.row#header-desktop",
       "flex-layout.row#menu-header"
     ]
   },
 
   // Header Desktop ------------------------------------------------------------------------------------------------------------------------
-
+  "flex-layout.row#top-bar": {
+    "props":{
+      "blockClass": "flexlay-top-bar"
+    },
+    "children":[
+      "carousel#top-bar"
+    ]
+  },
+  "carousel#top-bar": {
+    "props": {
+      "autoplay": true,
+      "banners": [
+        {
+          "image": "https://melimeloparis.vtexassets.com/assets/vtex.file-manager-graphql/images/topbar_plata_rate___d298c3d5a0559eff56963a3e75f6aeae.png"
+        },
+        {
+          "image": "https://melimeloparis.vtexassets.com/assets/vtex.file-manager-graphql/images/topbar_melimelo-ConvertImage%20Transport___d28fbb49f939785ab612fe4454f79c3b.png"
+        }
+      ],
+      "height": 36,
+      "width": "auto",
+      "showDots": false,
+      "showArrows": false,
+      "blockClass": "top-bar-header"
+    }
+  },
   "flex-layout.row#header-desktop": {
     "props": {
       "horizontalAlign": "center",
@@ -43,7 +69,7 @@
       "title": "Logo",
       "href": "/",
       "url": "https://melimeloparis.vtexassets.com/arquivos/logo.png",
-      "width": "239"
+      "width": "210"
     }
   },
   "search-bar#header-search": {
@@ -89,7 +115,9 @@
         "text": "femei"
       }
     },
-    "blocks":["submenu#category-femei"] 
+    "blocks":[
+      "submenu#category-femei"
+    ] 
   },
   "menu-item#barbati": {
     "props": {
@@ -103,7 +131,10 @@
         "tagTitle": "barbati",
         "text": "barbati"
       }
-    }
+    },
+    "blocks":[
+      "submenu#category-barbati"
+    ]
   },
   "menu-item#copii": {
     "props": {
@@ -117,7 +148,10 @@
         "tagTitle": "copii",
         "text": "copii"
       }
-    }
+    },
+    "blocks": [
+      "submenu#category-copii"
+    ]
   },
   "menu-item#meli-melo-deco": {
     "props": {
@@ -131,7 +165,10 @@
         "tagTitle": "meli-melo-deco",
         "text": "meli melo deco"
       }
-    }
+    },
+    "blocks":[
+      "submenu#category-deco"
+    ]
   },
   "menu-item#back-the-school": {
     "props": {
@@ -159,7 +196,10 @@
         "tagTitle": "promomania",
         "text": "promomania %"
       }
-    }
+    },
+    "blocks":[
+      "submenu#category-promomania"
+    ]
   },
   // Sub Item FEMEI ----------------------------------------------------------------------------------------------------------------------------------
   "submenu#category-femei": {
@@ -208,6 +248,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "sub-menu-item",
       "itemProps":{
         "type": "internal",
         "href":"/",
@@ -223,6 +264,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "sub-menu-item",
       "itemProps":{
         "type": "internal",
         "href":"/",
@@ -238,6 +280,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "sub-menu-item",
       "itemProps":{
         "type": "internal",
         "href":"/",
@@ -253,6 +296,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "sub-menu-item",
       "itemProps":{
         "type": "internal",
         "href":"/",
@@ -295,6 +339,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "sub-menu-item",
       "itemProps":{
         "type": "internal",
         "href":"/",
@@ -310,6 +355,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "sub-menu-item",
       "itemProps":{
         "type": "internal",
         "href":"/",
@@ -325,6 +371,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "sub-menu-item",
       "itemProps":{
         "type": "internal",
         "href":"/",
@@ -367,7 +414,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "sub-menu-header",
+      "blockClass": "sub-menu-item",
       "itemProps":{
         "type": "internal",
         "href":"/",
@@ -383,7 +430,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "sub-menu-header",
+      "blockClass": "sub-menu-item",
       "itemProps":{
         "type": "internal",
         "href":"/",
@@ -425,7 +472,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "sub-menu-header",
+      "blockClass": "sub-menu-item",
       "itemProps":{
         "type": "internal",
         "href":"/",
@@ -441,7 +488,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "sub-menu-header",
+      "blockClass": "sub-menu-item",
       "itemProps":{
         "type": "internal",
         "href":"/",
@@ -458,11 +505,237 @@
 			"isFullModeStyle": false,
 			"imageActionUrl": "#",
 			"imageUrl": "https://melimeloparis.vtexassets.com/assets/vtex.file-manager-graphql/images/337x325%20categorie%20femei%20clothes%201.3___77f23a98c42650f9322853b479cb910c.png",
-			"blockClass": "banner-menu-femei"
+			"blockClass": "banner-menu"
 		}
-	},
+  },
+  
+  // submenu Barbati --------------------------------------------------------------------------------------------------------------------------
 
+  "submenu#category-barbati": {
+    "props":{ 
+        "width": "auto"
+    },
+    "children":[
+      "menu#barbati-alege-category",
+      "menu#barbati-alege-stilul",
+      "menu#barbati-alege-branduri",
+      "menu#category-promotii",
+      "info-card#category-barbati"
+    ]
+  },
 
+  "menu#barbati-alege-category": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children":[
+        "menu-item#barbati-alege-header",
+        "menu-item#barbati-alege-haine",
+        "menu-item#barbati-alege-articole"
+      ]
+    },
+
+    "menu-item#barbati-alege-header": {
+      "props":{
+        "id": "alege-title",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "sub-menu-header",
+        "itemProps":{
+          "type": "internal",
+          "href":"/",
+          "noFollow":true,
+          "tagTitle": "ALEGE CATEGORIA",
+          "text": "ALEGE CATEGORIA"
+        }
+      }
+    },
+
+    "menu-item#barbati-alege-haine": {
+      "props":{
+        "id": "alege-haine",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "sub-menu-item",
+        "itemProps":{
+          "type": "internal",
+          "href":"/",
+          "noFollow":true,
+          "tagTitle": "Haine, Lenjerie Intima Si Accesorii",
+          "text": "Haine, Lenjerie Intima Si Accesorii"
+        }
+      }
+    },
+    "menu-item#barbati-alege-articole": {
+      "props":{
+        "id": "alege-haine",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "sub-menu-item",
+        "itemProps":{
+          "type": "internal",
+          "href":"/",
+          "noFollow":true,
+          "tagTitle": "Articole si cadouri premium",
+          "text": "Articole si cadouri premium"
+        }
+      }
+    },
+    
+    "menu#barbati-alege-stilul": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children":[
+        "menu-item#barbati-stilul-header",
+        "menu-item#barbati-stilul-vezitoate"
+      ]
+    },
+    "menu-item#barbati-stilul-header": {
+      "props":{
+        "id": "stilul-header",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "sub-menu-header",
+        "itemProps":{
+          "type": "internal",
+          "noFollow":true,
+          "tagTitle": "ALEGE STILUL",
+          "text": "ALEGE STILUL"
+        }
+      }
+    },
+    "menu-item#barbati-stilul-vezitoate": {
+      "props":{
+        "id": "vezi-toate",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "sub-menu-item",
+        "itemProps":{
+          "type": "internal",
+          "href":"/",
+          "noFollow":true,
+          "tagTitle": "Vezi Toate",
+          "text": "Vezi Toate"
+        }
+      }
+    },
+
+    "menu#barbati-alege-branduri": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children":[
+        "menu-item#barbati-branduri-header",
+        "menu-item#barbati-stilul-vezitoate"
+      ]
+    },
+
+    "menu-item#barbati-branduri-header": {
+      "props":{
+        "id": "branduri-header",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "sub-menu-header",
+        "itemProps":{
+          "type": "internal",
+          "noFollow":true,
+          "tagTitle": "ALEGE BRANDURI",
+          "text": "ALEGE BRANDURI"
+        }
+      }
+    },
+    "info-card#category-barbati": {
+      "props": {
+        "height": 230,
+        "id": "info-card-category-femei",
+        "isFullModeStyle": false,
+        "imageActionUrl": "#",
+        "imageUrl": "https://melimeloparis.vtexassets.com/assets/vtex.file-manager-graphql/images/3da20174-3ecd-479b-a091-32bdc634a7c3___146ceba243ce94d9116d7121d52e6a54.png",
+        "blockClass": "banner-menu"
+      }
+    },
+
+    // submenu copii --------------------------------------------------------------------------------------
+
+    "submenu#category-copii": {
+      "props":{ 
+          "width": "auto"
+      },
+      "children":[
+        "menu#category-alege-category",
+        "menu#category-alege-stilul",
+        "menu#category-alege-branduri",
+        "menu#category-promotii",
+        "info-card#category-copii"
+      ]
+    },
+    "info-card#category-copii": {
+      "props": {
+        "height": 230,
+        "id": "info-card-category-femei",
+        "isFullModeStyle": false,
+        "imageActionUrl": "#",
+        "imageUrl": "https://melimeloparis.vtexassets.com/assets/vtex.file-manager-graphql/images/eba03e9a-0422-4410-85d3-dcd8d32da5bb___3f404574d50001f4fe6021d4fc5cf3f1.png",
+        "blockClass": "banner-menu"
+      }
+    },
+
+    // submenu deco ------------------------------------------------------------
+    "submenu#category-deco": {
+      "props":{ 
+          "width": "auto"
+      },
+      "children":[
+        "menu#barbati-alege-category",
+        "menu#barbati-alege-stilul",
+        "menu#barbati-alege-branduri",
+        "menu#category-promotii",
+        "info-card#category-deco"
+      ]
+    },
+    "info-card#category-deco": {
+      "props": {
+        "height": 230,
+        "id": "info-card-category-femei",
+        "isFullModeStyle": false,
+        "imageActionUrl": "#",
+        "imageUrl": "https://melimeloparis.vtexassets.com/assets/vtex.file-manager-graphql/images/c5921cbb-abfd-4c21-9eeb-8e7d7aa85258___fe79a46c54a15468cbf20782639c5ed5.png",
+        "blockClass": "banner-menu"
+      }
+    },
+
+    // submenu promomania ------------------------------------------------------------
+
+    "submenu#category-promomania": {
+      "props":{ 
+          "width": "auto"
+      },
+      "children":[
+        "menu#category-alege-category",
+        "menu#category-alege-stilul",
+        "menu#category-alege-branduri",
+        "menu#category-promotii",
+        "info-card#category-promomania"
+      ]
+    },
+    "info-card#category-promomania": {
+      "props": {
+        "height": 230,
+        "id": "info-card-category-femei",
+        "isFullModeStyle": false,
+        "imageActionUrl": "#",
+        "imageUrl": "https://melimeloparis.vtexassets.com/assets/vtex.file-manager-graphql/images/50d616cd-f80d-4803-b7c1-d12885738c8a___5b07e96badf8ae55c36f2a584f29efad.png",
+        "blockClass": "banner-menu"
+      }
+    },
+    
 
   // Header Mobile -----------------------------------------------------------------------------------------------------------------------------
 
@@ -470,14 +743,27 @@
     "children": ["sticky-layout#mobile"]
   },
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+    "children": [
+      "flex-layout.row#mobile",
+      "flex-layout.row#mobile-search"
+    ]
+  },
+  "flex-layout.row#mobile-search": {
+    "children":[
+      "search-bar#header-search-mobile"
+    ]
+  },
+  "search-bar#header-search-mobile": {
+    "props":{
+      "blockClass":"search-mobile"
+    }
   },
   "flex-layout.row#mobile": {
     "children": [
       "drawer",
-      "logo",
+      "flex-layout.col#logo-mobile",
       "flex-layout.col#spacer",
-      "login",
+      "login#header-login",
       "minicart.v2"
     ],
     "props": {
@@ -485,6 +771,22 @@
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
+    }
+  },
+  "flex-layout.col#logo-mobile": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign":"center",
+      "blockClass": "logo-desktop"
+    },
+    "children": ["logo#mobile"]
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://melimeloparis.vtexassets.com/arquivos/logo.png",
+      "width": "135"
     }
   },
   "drawer": {
