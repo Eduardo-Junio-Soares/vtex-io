@@ -1,5 +1,7 @@
 .label {
     font-size: 0px;
+    display: block !important;
+    white-space: nowrap;
 }
 
 .label::before {
@@ -22,4 +24,8 @@
     background-repeat: no-repeat;
     margin-left: 10px;
     margin-bottom: 5px;
+}
+.container :global(.vtex-button__label) {
+    padding-left: 15px;
+    padding-right: 0;
 }

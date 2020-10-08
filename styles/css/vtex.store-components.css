@@ -2,6 +2,24 @@
     width: 612px;
     margin: 0 100px;
 }
+@media(max-width: 1025px){
+    .searchBarContainer {
+        margin: 0 15px;
+    }
+    .autoCompleteOuterContainer--search-mobile {
+        border: none;
+    }
+    .autoCompleteOuterContainer--search-mobile :global(.vtex-styleguide-9-x-input) {
+        max-width: 100%;
+    }
+    .autoCompleteOuterContainer--search-mobile :global(.vtex-input-prefix__group) {
+        border: none;
+        border-radius: 0 !important;
+    }
+    .logoContainer {
+        padding: 0;
+    }
+}
 .autoCompleteOuterContainer--header-search :global(.vtex-styleguide-9-x-input) {
     max-width: 100%;
 }

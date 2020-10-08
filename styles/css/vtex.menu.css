@@ -4,6 +4,7 @@
     text-transform: uppercase;
     font-weight: 800;
     font-size: 15px;
+    white-space: nowrap !important;
 }
 .styledLinkContent--header-item-menu-promania:hover,
 .styledLinkContent--header-item-menu:hover {
@@ -51,6 +52,17 @@
     font-weight: 500;
     color: #727272;
 }
+@media(max-width: 1025px) {
+    .styledLink--sub-menu-item {
+        font-weight: 500;
+        color: #727272;
+        text-transform: uppercase;
+        
+    }
+    .styledLinkContent--sub-menu-item {
+        padding: 15px 0 !important;
+    }
+}
 .styledLinkContent--sub-menu-item {
     padding: 4px;
 }
@@ -60,4 +72,40 @@
 .menuContainerNav {
     padding: 0 25px;
     border-right: 1px solid #e7ecef;
+}
+.menuContainer--mobile-menu-drawer{
+    display: flex;
+    flex-direction: column;
+}
+.styledLinkContent--mobile-menu-item{
+    padding: 0 15px;
+    width: 100%;
+}
+.menuContainerNav--mobile-menu-drawer {
+    width: 100%;
+    padding: 0;
+    border-right: none;
+}
+.menuItem--mobile-menu-item {
+    border-bottom: 1px solid #ccc;
+}
+.menuItem--mobile-menu-item:first-child{
+    border-top: 1px solid #ccc;
+
+}
+.accordionIcon--mobile-menu-item {
+    font-size: 0;
+}
+.accordionIcon--mobile-menu-item::before{
+    content: "";
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    transform: rotate(90deg);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 129 129'%3E%3Cpath d='M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.menuContainerNav{
+    border-right: none;
 }

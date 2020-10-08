@@ -744,11 +744,15 @@
   },
   "sticky-layout#mobile": {
     "children": [
+      "flex-layout.row#top-bar",
       "flex-layout.row#mobile",
       "flex-layout.row#mobile-search"
     ]
   },
   "flex-layout.row#mobile-search": {
+    "props":{
+      "blockClass": "flexlay-mobile-search"
+    },
     "children":[
       "search-bar#header-search-mobile"
     ]
@@ -760,7 +764,8 @@
   },
   "flex-layout.row#mobile": {
     "children": [
-      "drawer",
+      "drawer#melimelo",
+      "flex-layout.col#spacer",
       "flex-layout.col#logo-mobile",
       "flex-layout.col#spacer",
       "login#header-login",
@@ -789,7 +794,202 @@
       "width": "135"
     }
   },
-  "drawer": {
-    "children": []
-  }
+  "drawer#melimelo": {
+    "children": [
+      "menu#mobile-menu-drawer"
+    ]
+  },
+  "menu#mobile-menu-drawer": {
+    "props":{
+      "blockClass":"mobile-menu-drawer"
+    },
+    "children":[
+      "menu-item#mobile-category-femei",
+      "menu-item#mobile-category-barbati",
+      "menu-item#mobile-category-copii",
+      "menu-item#mobile-category-meli-melo-deco",
+      "menu-item#mobile-category-back-to-school",
+      "menu-item#mobile-category-promomania"
+    ]
+  },
+  "menu-item#mobile-category-femei": {
+		"blocks": [
+			"submenu.accordion#mobile-category-femei"
+		],
+		"props": {
+			"id": "femei-category-mobile",
+			"type": "custom",
+			"iconId": null,
+      "highlight": false,
+      "blockClass": "mobile-menu-item",
+			"itemProps": {
+				"tagTitle": "Femei",
+				"text": "FEMEI"
+			}
+		}
+  },
+  "menu-item#mobile-category-barbati": {
+		"blocks": [
+			"submenu.accordion#mobile-category-barbati"
+		],
+		"props": {
+			"id": "barbati-category-mobile",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+      "blockClass": "mobile-menu-item",
+			"itemProps": {
+				"tagTitle": "Barbati",
+				"text": "BARBATI"
+			}
+		}
+  },
+  "menu-item#mobile-category-copii": {
+		"blocks": [
+			"submenu.accordion#mobile-category-copii"
+		],
+		"props": {
+			"id": "copii-category-mobile",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+      "blockClass": "mobile-menu-item",
+			"itemProps": {
+				"tagTitle": "copii",
+				"text": "COPII"
+			}
+		}
+  },
+  "menu-item#mobile-category-meli-melo-deco": {
+		"blocks": [
+			"submenu.accordion#mobile-category-meli-melo-deco"
+		],
+		"props": {
+			"id": "meli-melo-deco-category-mobile",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+      "blockClass": "mobile-menu-item",
+			"itemProps": {
+				"tagTitle": "meli-melo-deco",
+				"text": "MELI-MELO-DECO"
+			}
+		}
+  },
+  "menu-item#mobile-category-back-to-school": {
+		"props": {
+			"id": "back-to-school-category-mobile",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+      "blockClass": "mobile-menu-item",
+			"itemProps": {
+				"tagTitle": "back-to-school",
+				"text": "BACK-TO-SCHOOL"
+			}
+		}
+  },
+  "menu-item#mobile-category-promomania": {
+		"blocks": [
+			"submenu.accordion#mobile-category-promomania"
+		],
+		"props": {
+			"id": "promomania-category-mobile",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+      "blockClass": "mobile-menu-item",
+			"itemProps": {
+				"tagTitle": "promomania",
+				"text": "PROMOMANINA"
+			}
+		}
+  },
+  "submenu.accordion#mobile-category-femei": {
+		"children": [
+      "menu#mobile-category-femei"
+		]
+  },
+  "submenu.accordion#mobile-category-barbati": {
+		"children": [
+      "menu#mobile-category-barbati"
+		]
+  },
+  "submenu.accordion#mobile-category-copii": {
+		"children": [
+      "menu#mobile-category-copii"
+		]
+  },
+  "submenu.accordion#mobile-category-meli-melo-deco": {
+		"children": [
+      "menu#mobile-category-meli-melo-deco"
+		]
+  },
+  "submenu.accordion#mobile-category-promomania": {
+		"children": [
+      "menu#mobile-category-promomania"
+		]
+  },
+  
+  "menu#mobile-category-femei": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": [
+      "menu-item#category-vezi-toate",
+      "menu-item#category-femei-bijuterii",
+      "menu-item#category-femei-genti-si-portofele",
+      "menu-item#category-femei-haine",
+      "menu-item#category-femei-accesorii-par"
+		]
+  },
+  "menu#mobile-category-barbati": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": [
+      "menu-item#barbati-stilul-vezitoate",
+      "menu-item#category-femei-haine",
+      "menu-item#barbati-alege-articole"
+		]
+  },
+  "menu#mobile-category-copii": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": [
+      "menu-item#barbati-stilul-vezitoate",
+      "menu-item#category-femei-bijuterii",
+      "menu-item#category-femei-genti-si-portofele",
+      "menu-item#barbati-alege-articole",
+      "menu-item#category-femei-haine"
+		]
+  },
+  "menu#mobile-category-meli-melo-deco": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": [
+      "menu-item#barbati-stilul-vezitoate",
+      "menu-item#category-femei-bijuterii",
+      "menu-item#category-femei-haine",
+      "menu-item#category-femei-genti-si-portofele",
+      "menu-item#barbati-alege-articole"
+
+		]
+  },
+  "menu#mobile-category-promomania": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": [
+      "menu-item#barbati-stilul-vezitoate",
+      "menu-item#category-femei-bijuterii",
+      "menu-item#category-femei-haine",
+      "menu-item#category-femei-genti-si-portofele",
+      "menu-item#barbati-alege-articole",
+      "menu-item#category-femei-bijuterii",
+      "menu-item#category-femei-haine"
+		]
+	}
 }

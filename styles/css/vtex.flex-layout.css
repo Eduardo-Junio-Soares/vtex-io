@@ -22,3 +22,10 @@
     width: 100%;
 
 }
+.flexRowContent--flexlay-mobile-search {
+    background-color: #f1f0f0;
+}
+
+.flexRowContent--main-header-mobile {
+    background-color: #fff;
+}
